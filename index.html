@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+    <h2>Test Form</h2>
+
+    <form id="test-form" action="/submit-form" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" ><br>
+
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname" ><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" ><br>
+
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" ><br>
+
+        <label for="hair_length">Hair Length:</label><br>
+        <select id="hair_length" name="hair_length" >
+            <option value="">Select Hair Length</option>
+            <option value="back">Back length</option>
+            <option value="bum">Bum length</option>
+            <option value="waist">Waist length</option>
+            <option value="tigh">Thigh length</option>
+            <option value="knee">Knee length</option>
+        </select><br>
+
+        <label for="braid_type">Braid Type:</label><br>
+        <select id="braid_type" name="braid_type" >
+            <option value="">Select Braid Type</option>
+            <option value="knotless braids">Knotless braids</option>
+            <option value="boho braids">Boho braids</option>
+            <option value="peekaboo braids">Peekaboo braids</option>
+            <option value="curly ends">Curly ends</option>
+        </select><br>
+
+        <label for="hair_size">Hair Size:</label><br>
+        <select id="hair_size" name="hair_size" >
+            <option value="">Select Hair Size</option>
+            <option value="small">Small</option>
+            <option value="s/m">Small/Medium</option>
+            <option value="m/l">Medium/Large</option>
+            <option value="large">Large</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" ></textarea><br>
+
+       
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <!-- Include EmailJS library -->
+    
+    
+<script src="server.js"></script>
+</body>
+
+</html>
